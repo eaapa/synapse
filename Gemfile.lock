@@ -1,8 +1,9 @@
 PATH
   remote: .
   specs:
-    synapse (0.7.0)
-      docker-api (~> 1.6.0)
+    synapse (0.7.1)
+      docker-api (~> 1.7.2)
+      marathon_client (~> 0.2.2)
       zk (~> 1.9.2)
 
 GEM
@@ -11,16 +12,24 @@ GEM
     archive-tar-minitar (0.5.2)
     coderay (1.0.9)
     diff-lcs (1.2.4)
-    docker-api (1.6.0)
+    docker-api (1.7.6)
       archive-tar-minitar
-      excon (>= 0.27.3)
+      excon (>= 0.28)
       json
-    excon (0.29.0)
+    excon (0.31.0)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     json (1.8.1)
     little-plugger (1.1.3)
     logging (1.7.2)
       little-plugger (>= 1.1.3)
+    marathon_client (0.2.2)
+      httparty (~> 0.11.0)
+      trollop (~> 2.0)
     method_source (0.8.2)
+    multi_json (1.8.2)
+    multi_xml (0.5.5)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
@@ -36,6 +45,7 @@ GEM
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-mocks (2.14.3)
     slop (3.4.6)
+    trollop (2.0)
     zk (1.9.2)
       logging (~> 1.7.2)
       zookeeper (~> 1.4.0)
